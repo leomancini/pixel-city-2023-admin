@@ -105,14 +105,12 @@ function renderPath(path) {
 				}
 			}
 		});
-
-		savePaths();
 	}
 
 	return pathElement;
 }
 
-function savePaths() {
+function encodePathsData() {
 	let pathsData = [];
 	let pathElements = Array.from(document.querySelectorAll('.path'));
 
@@ -134,9 +132,20 @@ function savePaths() {
 		paths: pathsData
 	};
 
-	console.log(data);
+	return data;
 }
 
 let pathsParentElement = document.querySelector('#paths');
+let downloadButton = document.querySelector('#download');
+
+downloadButton.onclick = () => {
+	let pathsData = encodePathsData();
+	let downloadHandler = document.createElement('a');
+	downloadHandler.setAttribute('href', 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(pathsData)));
+	downloadHandler.setAttribute('download', 'paths.json');
+	document.body.appendChild(downloadHandler);
+	downloadHandler.click();
+	downloadHandler.remove();
+}
 
 initializePaths();
