@@ -1,0 +1,79 @@
+{
+    "paths": [
+        {
+            "id": "12345678",
+            "title": "Explore the city center",
+            "description": ""
+        },
+        {
+            "id": "34567587",
+            "title": "Visit a tourist attraction",
+            "description": ""
+        },
+        {
+            "id": "65787654",
+            "title": "Take stroll in a local park",
+            "description": ""
+        },
+        {
+            "id": "43906856",
+            "title": "Explore the city center - path 1",
+            "description": "",
+            "parent": "12345678"
+        },
+        {
+            "id": "12349866",
+            "title": "Explore the city center - path 2",
+            "description": "",
+            "parent": "12345678"
+        },
+        {
+            "id": "65079456",
+            "title": "Visit a tourist attraction - path 1",
+            "description": "",
+            "parent": "34567587"
+        },
+        {
+            "id": "34968456",
+            "title": "Visit a tourist attraction - path 2",
+            "description": "",
+            "parent": "34567587"
+        },
+        {
+            "id": "23469045",
+            "title": "Take stroll in a local park - path 1",
+            "description": "",
+            "parent": "65787654"
+        },
+        {
+            "id": "45708123",
+            "title": "Take stroll in a local park - path 2",
+            "description": "",
+            "parent": "65787654"
+        },
+        {
+            "id": "23456945",
+            "title": "Explore the city center - path 2 - path 1",
+            "description": "",
+            "parent": "12349866"
+        },
+        {
+            "id": "43968545",
+            "title": "Visit a tourist attraction - path 2 - path 1",
+            "description": "",
+            "parent": "34968456"
+        },
+        {
+            "id": "43674501",
+            "title": "Take stroll in a local park - path 2 - path 1",
+            "description": "",
+            "parent": "45708123"
+        },
+        {
+            "id": "23534656",
+            "title": "Take stroll in a local park - path 2123123 - path 1 - path 1",
+            "description": "",
+            "parent": "43674501"
+        }
+    ]
+}
